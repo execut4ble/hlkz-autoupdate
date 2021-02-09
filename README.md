@@ -33,13 +33,17 @@ location /autoupdate {
 ```
 
 - Configure paths in autoupdate.sh and make it executable
+
   `chmod +x autoupdate.sh`
 
 - Clone git repo with branch unstable according to your autoupdate.sh paths
+
   `git clone [https://github.com/YaLTeR/hlkreedz.git](https://github.com/YaLTeR/hlkreedz.git) -b unstable`
 
 - Enter cloned repo and verify that git pull works without errors (should say Already up to date)
+
   `git pull`
 
 - Run the node app (webhook listener server)
+
   `node index.js`
