@@ -38,7 +38,7 @@ location /autoupdate {
 
 - Clone git repo with branch unstable according to your autoupdate.sh paths
 
-  `git clone [https://github.com/YaLTeR/hlkreedz.git](https://github.com/YaLTeR/hlkreedz.git) -b unstable`
+  `git clone https://github.com/YaLTeR/hlkreedz.git -b unstable`
 
 - Enter cloned repo and verify that git pull works without errors (should say Already up to date)
 
