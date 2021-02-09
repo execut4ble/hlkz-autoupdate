@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /path/to/hlkreedz
+git pull
+
+cp -rf ./* path/to/ag/addons/amxmodx/
+
+cd /path/to/hlmdserver/user
+./hldmserver restart

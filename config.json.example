@@ -1,0 +1,4 @@
+{
+    "port": 3005,
+    "secret": "changeme"
+}
