@@ -4,11 +4,18 @@ const exec = util.promisify(require("child_process").exec);
 const fs = require("fs");
 const crypto = require("crypto");
 const config = require("./config.json");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 15, // limit each IP to 10 requests per windowMs
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(limiter);
 
 app.post("/autoupdate", (req, res) => {
   // We only care about push event)))
