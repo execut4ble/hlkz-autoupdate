@@ -5,5 +5,5 @@ git pull
 
 cp -rf ./* path/to/ag/addons/amxmodx/
 
-cd /path/to/hlmdserver/user
+cd /path/to/hldmserver
 ./hldmserver restart
